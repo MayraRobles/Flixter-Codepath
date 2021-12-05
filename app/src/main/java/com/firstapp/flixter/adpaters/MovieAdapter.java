@@ -67,6 +67,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverView());
+            String imageUrl;
+            // If phone is in landscape
+            if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                //Then imageUrl = poster image
+                imageUrl = movie.getBackdropPath();
+            }
+            //else imageUrl = back drop image
+            else {
+                imageUrl = movie.getPosterPath();
+            }
             Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
         }
     }
