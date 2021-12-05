@@ -27,7 +27,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### Notes
 
-This time, I had trouble with youtube. Nonetheless, it was fixed.
+This time, I had trouble with initializing the Youtube player. Nonetheless, it was fixed.
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
